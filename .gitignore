@@ -1,18 +1,20 @@
 *.rs~
 *.swp
-*.exe
 
 /target/
 
-Cargo.lock
-
 **/*.rs.bk
 
-.env
-.env.local
-
 .vscode/
+
 .idea/
 
 .DS_Store
 Thumbs.db
+
+*.exe
+*.dll
+*.so
+*.dylib
+
+*.log
