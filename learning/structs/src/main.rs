@@ -12,4 +12,6 @@ fn main() {
         "> Estado civil: {}.",
         if person.casado() {"casado"} else {"solteiro"}
     );
+
+    println!("{}", person);
 }

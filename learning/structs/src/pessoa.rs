@@ -1,3 +1,5 @@
+use std::fmt;
+
 pub struct Pessoa {
     nome: String,
     idade: u32,
@@ -35,5 +37,16 @@ impl Pessoa {
 
     pub fn set_casado(&mut self, casado: bool) {
         self.casado = casado;
+    }
+}
+
+impl fmt::Display for Pessoa {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "\nPessoa {{
+            nome: {},
+            idade: {},
+            casado: {},
+        }}",
+        self.nome, self.idade, self.casado)
     }
 }
